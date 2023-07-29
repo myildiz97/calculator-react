@@ -1,0 +1,88 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #8ecae6;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 20rem;
+  height: 500px;
+  background-color: #023047;
+  border-radius: 6px;
+}
+
+.results {
+  width: 90%;
+  height: 20%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-around;
+  padding-right: 10px;
+}
+
+.btns {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 90%;
+  height: 77%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border: 3px solid black;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid white;
+}
+
+#clear, #zero {
+  background-color: #8d99ae;
+  grid-column: span 2;
+}
+
+#clear {
+  background-color: #d90429;
+}
+
+#divide, #multiply, #seven, #eight, #nine, #subtract, #four, #five, #six, #add, #one, #two, #three, #decimal {
+  background-color: #8d99ae;
+  grid-column: span 1;
+}
+
+#divide, #multiply, #subtract, #add {
+  background-color: #fb8500;
+}
+
+#equals {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-color: #15616d;
+}
