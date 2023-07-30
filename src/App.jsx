@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
   const [current, setCurrent] = useState("0");
@@ -8,7 +8,6 @@ const App = () => {
   const [limitCurr, setLimitCurr] = useState(null);
   const [limitCalc, setLimitCalc] = useState(null);
   const [limitFlag, setLimitFlag] = useState(false);
-
 
   const operators = ["+", "-", "*", "/"];
   const opsWoSub = ["+", "*", "/"];
