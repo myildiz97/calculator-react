@@ -19,7 +19,8 @@ body {
 
 .container {
   width: 20rem;
-  height: 500px;
+  height: 31.25rem;
+  min-height: 31.25rem;
   background-color: #023047;
   border-radius: 6px;
 }
@@ -33,6 +34,19 @@ body {
   align-items: end;
   justify-content: space-around;
   padding-right: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.res {
+  max-width: 100%;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-align: end;
+}
+
+.curr {
+  color: #d90429;
 }
 
 .btns {
