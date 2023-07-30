@@ -92,7 +92,7 @@ const App = () => {
         calculation.slice(0, -2) : calculation.slice(0, -1) : calculation;
       calc = calc.includes("--") ? calc.replace(/--/g, "+") : calc;
       const multiOp = calc.match(/[+\-*\/]+/g);
-      multiOp.forEach(op => {
+      multiOp && multiOp.forEach(op => {
         if (op.length > 2 || (op.length === 2 && op.at(0) === "-" && op.at(-1) !== "-")) calc = calc.replace(op, op.at(-1));
         if (operators.includes(calc.at(-1))) calc = calc.slice(0, -1);
       });
